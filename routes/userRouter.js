@@ -8,7 +8,7 @@ router.get('/invitingpatient',(req, res) => {
 
         const { URLSearchParams } = require('url');
 
-        const baseUrl = `http://localhost:5173/remoteuservideocall`
+        const baseUrl = `https://videocalling-app-frontend.vercel.app/remoteuservideocall`
         const params = new URLSearchParams({ peerId: peerId })
         const urlWithData = `${baseUrl}?${params.toString() || ''}`
 
